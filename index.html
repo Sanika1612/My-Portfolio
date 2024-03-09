@@ -8,18 +8,20 @@
 
   <link rel="stylesheet" href="style.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 
 <body>
   <header class="header">
     <a href="#" class="logo">Portfolio</a>
-    <nav class="navbar">
+    <nav class="navbar" id="myTopnav">
       <a href="#" style="--i: 1" class="active">Home</a>
       <a href="#about" style="--i: 2">About</a>
       <a href="#skills" style="--i: 4">Skills</a>
       <a href="#projects" style="--i: 5">Projects</a>
       <a href="#contact" style="--i: 6">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
       
     </nav>
   </header>
@@ -62,7 +64,7 @@
     </div>
   </section>
 
-  <section id="services">
+  <!-- <section id="services">
     <div class="services" id="services">
       <div class="container">
         <h1 class="sub-title">My <span> Services</span></h1>
@@ -103,7 +105,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section id="skills"></section>
   <div class="container" >
@@ -159,7 +161,6 @@
           <span></span>
         </div>
       </div>
-
       <div class="bar">
         <i class="bx bxl-mongodb" style="color: #3c9122; size: 100px;"></i>
         <div class="info">
@@ -206,12 +207,11 @@
         </svg>
         <div class="percentage">90%</div>
         <div class="text">Teamwork</div>
-      
       </div>
     </div>
   </div>
 </div>
-</div>
+
   </section>
 
 
@@ -219,7 +219,7 @@
       <div class="portfolio" id="project">
         <div class="main-text" id="project">
           <h1 class="sub-title" class="sk">My <span> Projects</span></h1>
-          <!-- <h2>Projects</h2> -->
+
 
           <div class="portfolio-content">
             <div class="row">

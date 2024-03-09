@@ -1,11 +1,11 @@
 function myFunction() {
-    var x = document.querySelector(".navbar");
+    var x = document.getElementById("myTopnav");
     if (x.className === "navbar") {
-        x.className += " responsive";
+      x.className += " responsive";
     } else {
-        x.className = "navbar";
+      x.className = "navbar";
     }
-}
+  }
 var typed=new Typed(".text", {
     strings: ["Programmer", "Developer", "Learner"],
     typeSpeed:100,
