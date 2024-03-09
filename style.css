@@ -100,14 +100,14 @@ body{
     }
     nav ul li {
       float: none;
+      margin-bottom: 20px;
     }
     nav ul li a {
       padding: 15px;
       line-height: 20px;
+      
     }
-    nav ul li ul li a {
-      padding-left: 30px;
-    }
+  
   }
   #nav-toggle {
     position: absolute;
@@ -349,10 +349,10 @@ body{
 .sub-title span{
     color: #0ef;
 }
-/* .container{
+.container{
     padding: 90px;
 
-} */
+}
 /* .services-list{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
@@ -412,19 +412,19 @@ body{
 }
 
 
-section{
+/* section{
     display: flex;
     flex-wrap: wrap;
-}
+} */
 .container1{
     width: 100%;
-    height: 500px;
+
  
 
     margin-bottom: 200px;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
-    grid-gap: 100px;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    grid-gap: 70px;
     margin-top: 50px;
     
 }
@@ -435,6 +435,7 @@ section{
     text-decoration-thickness: 5px;
     margin-bottom: 50px;
 }
+
 
 .bar{
     font-size: 23px;
@@ -559,10 +560,11 @@ section{
     padding-bottom: 0px;
 }
 .radial-bar{
-width: 100%;
+/* width: 100%; */
 display: flex;
 
-/* flex-wrap: wrap; */
+flex-wrap: wrap;
+
 justify-content: space-evenly;
 align-items:center;
 margin-bottom: 0%;
@@ -576,13 +578,15 @@ margin-left: 100px;
      position: relative;
 
 }
+
 .radial-bars .radial-bar svg{
     position: absolute;
     top: 50%;
     left: 50%; 
     transform: translate(-50%, -50%)rotate(-90deg);
     width: 120px;
-    height: 160px;
+    height: 150px;
+
 }
 .radial-bars .radial-bar .progress-bar{
 
@@ -620,24 +624,24 @@ margin-left: 100px;
 }
 @keyframes animate-path2{
     100%{
-        stroke-dashoffset: 175;;
+        stroke-dashoffset: 70;;
     }
 }
 @keyframes animate-path3 {
     100%{
-        stroke-dashoffset: 125;
+        stroke-dashoffset: 50;
     }
 }
 @keyframes animate-path4 {
     100%{
-        stroke-dashoffset: 75;
+        stroke-dashoffset: 50;
     }
 }
 
 .radial-bar .percentage{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 45%;
+    left: 46%;
     transform: translate(-50% -50%);
     font-size: 20px;
     font-weight: 500;
@@ -646,7 +650,7 @@ margin-left: 100px;
 }
 .radial-bar .text{
     width: 100%;
-    position: relative;
+    position: absolute;
     text-align: center;
     left: 50%;
     
@@ -658,14 +662,14 @@ margin-left: 100px;
     font-weight: 500;
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
-    margin-left: 25px;
+    margin-left: 5rem;
 }
 .main-text{
    
     /* margin-top: 50px; */
     width: 100%;
     padding-top: 130px;
-    /* margin-top: 200px; */
+
     margin-bottom: 200px;
     width: 100%;
 }
@@ -676,12 +680,8 @@ margin-left: 100px;
 }
 .portfolio{
     width: 100%;
-    /* mediaquery
-    display: grid;
+    /* margin: 50px; */
 
-    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
-    grid-gap: 100px; */
-    margin: 50px;
 }
 .portfolio-content{
     display: grid;
@@ -700,7 +700,7 @@ margin-left: 100px;
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
-    height: 500px;
+    height: 450px;
   
 
 }
@@ -714,7 +714,7 @@ margin-left: 100px;
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.01),rgb(0, 238, 255));
+    background: linear-gradient(rgb(208, 242, 244), #0ef);
     position: absolute;
     border-radius: 8px;
     left: 0;
@@ -741,7 +741,7 @@ margin-left: 100px;
     line-height: 1.5;
 }
 .layer i{
-    color: #ff004f;
+    color: #130e2f;
     margin-top: 20px;
     font-size: 20px;
     background: #fff;
@@ -854,11 +854,12 @@ outline: none;
 width: 90%;
 padding: 10px;
 background: #555557;
-color: #000;
+color: #fff;
 font-size: 1rem;
 font-weight: 600;
 margin-bottom: 0.5rem;
 border-radius: 0.5rem;
+
 
 
 }
