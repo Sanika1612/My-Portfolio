@@ -14,12 +14,13 @@ body{
     top:0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    /* padding: 10px 10%; */
     background: #051129;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    /* padding-top: 30px; */
 }
 
 
@@ -33,11 +34,12 @@ body{
   nav {
     float: right;
 
+
   }
   nav ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding-top: 15px;
 
   }
   nav ul li {
@@ -46,9 +48,9 @@ body{
   }
   nav ul li a {
     display: inlineblock;
-    padding: 0 20px;
-    line-height: 70px;
-    font-size: 30px;
+    padding-top: 0px;
+    line-height: 30px;
+    font-size: 25px;
 
     /* color: #463f3f; */
     text-decoration: none;
@@ -79,14 +81,14 @@ body{
     top: 0;
     right: 0;
     background: #0ef;
-    height: 60px;
-    width: 60px;
-    margin: 20px;
+    height: 40px;
+    width: 40px;
+    margin: 15px;
     border-radius: 10%;
     /* background-color: violet; */
   }
   
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1000px) {
     .nav-mobile {
       display: block;
     }
@@ -100,7 +102,7 @@ body{
     }
     nav ul li {
       float: none;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
     nav ul li a {
       padding: 15px;
@@ -111,8 +113,8 @@ body{
   }
   #nav-toggle {
     position: absolute;
-    left: 15px;
-    top: 27px;
+    left: 10px;
+    top: 20px;
     cursor: pointer;
     /* padding: 10px 35px 16px 0px; */
   }
@@ -121,8 +123,8 @@ body{
   #nav-toggle span:after {
     cursor: pointer;
     border-radius: 1px;
-    height: 4px;
-    width: 30px;
+    height: 3px;
+    width: 20px;
     background: #051725;
     position: absolute;
     display: block;
@@ -157,7 +159,7 @@ body{
   .navigation – the outer wrapper for the navbar. Specifies the height and color, and will stretch the full width of the viewport.
   */
   .navigation {
-    height: 70px;
+    height: 20px;
     background: #ffffff;
   }
   
@@ -178,7 +180,7 @@ body{
   }
   .brand img,
   .brand img:visited {
-    height: 70px;
+    height: 60px;
   }
   
 
@@ -195,11 +197,11 @@ body{
     display: flex;
     align-items: center;
     padding:70px 10% 0;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 .home-content h3{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
@@ -207,7 +209,7 @@ body{
     animation-delay:.7s ;
 }
 .home-content h3:nth-of-type(2){
-    margin-bottom:30px;
+    margin-bottom:20px;
 
 }
 .home-content h3 span{
@@ -215,8 +217,8 @@ body{
 
 }
 .home-content h1{
-    font-size:90px;
-    font-weight:700;
+    font-size:70px;
+    font-weight:650;
     margin: -3 0;
     opacity: 0;
     animation: slideRight 1s ease forwards;
@@ -225,30 +227,31 @@ body{
 
 }
 .home-content p{
-    font-size: 23px;
+    font-size: 15px;
     opacity: 0;
     animation: slideBottom 1s ease forwards;
     animation-delay:1s ;
-    white-space: 10px;
+    white-space: 6px;
     letter-spacing: 3px;
+    line-height: 25px;
 }
 .home-sci{
-    padding: 40px 0px 40px 0px;
+    padding: 20px 0px 20px 0px;
 }
 .home-sci a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     background: transparent;
     border: 2px solid #0ef;
     border-radius: 50%;
-    font-size: 30px;
+    font-size: 18px;
     color: #0ef;
     text-decoration: none;
     transition: .5s ease;
-    margin: 30px 15px 30px 0;
+    margin: 20px 15px 20px 0;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay:calc(.2s * var(--i)) ;
@@ -257,7 +260,7 @@ body{
 .home-sci a:hover{
     background: #0ef;
     color: #081b29;
-    box-shadow: 0 0 20px #0ef;
+    box-shadow: 0 0 10px #0ef;
     
 }
 .btn-box{
@@ -265,7 +268,7 @@ body{
     padding: 12px 20px;
     background-color: #0ef;
     border-radius: 40px;
-    font-size: 20px;
+    font-size: 10px;
     color: #081b29;
     letter-spacing: 1px;
     text-decoration: none;
@@ -285,9 +288,9 @@ body{
     margin: 10%;
     display: grid;
    
-    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     align-items: center;
-   gap: 4rem;
+   gap: 3.0rem;
    padding: 5%;
    padding-top: 10%;
    /* justify-content: center;
@@ -297,9 +300,9 @@ body{
 }
 .about-img img{
     /* padding:5%; */
-    max-width:630px;
-    height: 600px;
-    width: 600px;
+    max-width:600px;
+    height: 450px;
+    width: 450px;
     border-radius: 50%;
     align-items: center;
 
@@ -312,7 +315,7 @@ body{
     color: #0ef;
 }
 .about-text h4{
-    font-size: 30px;
+    font-size: 15px;
     font-weight: 600;
     color: #fff;
     line-height: 1.7;
@@ -320,10 +323,10 @@ body{
 }
 .about-text p{
     color: aliceblue;
-    font-size: 22px;
+    font-size: 15px;
     line-height: 1.4;
     margin-bottom: 4rem;
-    white-space: 10px;
+    white-space: px;
     letter-spacing: 3px;
     margin-bottom: 70px;
     margin-top: 70px;
@@ -339,14 +342,14 @@ body{
 } */
 .sub-title{
     text-align: center;
-    font-size: 70px;
-    padding-bottom: 50px;
+    font-size: 60px;
+    /* padding-bottom: 50px; */
 }
 .sub-title span{
     color: #0ef;
 }
 .container{
-    padding: 90px;
+    padding: 70px;
 
 }
 /* .services-list{
@@ -417,7 +420,7 @@ body{
 
  
 
-    margin-bottom: 200px;
+    margin-bottom: 150px;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
     grid-gap: 70px;
@@ -427,17 +430,18 @@ body{
 .heading1{
     text-align: center;
     text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 5px;
-    margin-bottom: 50px;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+    margin-bottom: 30px;
 }
 
 
 .bar{
-    font-size: 23px;
+    font-size: 27px;
+    margin-bottom: 0;
 }
 .Technical-bars .bar{
-    margin-top: 40px 0;
+    margin-top: 50px 0;
 }
 .Technical-bars .bar:first-child{
     margin-top: 0;
@@ -449,7 +453,7 @@ body{
     margin-bottom: 5px;
 }
 .Technical-bars .bar .info span{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
@@ -514,6 +518,7 @@ body{
     right: -20px;
     animation: showText 0.5s 1.5s linear forwards;
     opacity: 0;
+    font-size: 15px;
 }
 .progress-line.html span::after{
     content: "90%";
@@ -538,7 +543,7 @@ body{
     position: absolute;
     width: 0;
     height: 0;
-    border: 7px solid transparent;
+    border: 5px solid transparent;
     border-bottom-width: 0px;
     border-right-width: 0px;
     border-top-color: #000;
@@ -564,12 +569,12 @@ flex-wrap: wrap;
 justify-content: space-evenly;
 align-items:center;
 margin-bottom: 0%;
-margin-left: 100px;
+margin-left: 50px;
 
 }
 .radial-bars .radial-bar{
     width: 50%;
-    height: 150px;
+    height: 130px;
 
      position: relative;
 
@@ -580,8 +585,8 @@ margin-left: 100px;
     top: 50%;
     left: 50%; 
     transform: translate(-50%, -50%)rotate(-90deg);
-    width: 120px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 
 }
 .radial-bars .radial-bar .progress-bar{
@@ -639,8 +644,8 @@ margin-left: 100px;
     top: 45%;
     left: 46%;
     transform: translate(-50% -50%);
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 400;
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
 }
@@ -654,7 +659,7 @@ margin-left: 100px;
     transform: translateX(-50px);
 
     align-items: center;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
@@ -664,9 +669,9 @@ margin-left: 100px;
    
     /* margin-top: 50px; */
     width: 100%;
-    padding-top: 130px;
+    /* padding-top: 0px; */
 
-    margin-bottom: 200px;
+    margin-bottom: 160px;
     width: 100%;
 }
 .main-text h2{
@@ -681,10 +686,10 @@ margin-left: 100px;
 }
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 100px;
-    margin: 50px;
-    padding-top: 50px;
+    margin: 40px;
+    padding-top: 40px;
     
     
     /* margin-left: 60px; */
@@ -696,7 +701,7 @@ margin-left: 100px;
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
-    height: 450px;
+    height: 400px;
   
 
 }
@@ -705,7 +710,7 @@ margin-left: 100px;
     border-radius: 8px;
     display: block;
     transition: transform 0.5s;
-    height: 500px;
+    height: 400px;
 }
 .layer{
     width: 100%;
@@ -721,25 +726,25 @@ margin-left: 100px;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 40px;
+    padding: 0 35px;
     transition: height 0.5s;
 
 }
 .layer h5{
     color: #000;
     font-size:25px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 15px;
 }
 .layer p{
     color: #000;
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1.5;
 }
 .layer i{
     color: #130e2f;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 10px;
     background: #fff;
     width: 60px;
     height: 60px;
@@ -758,12 +763,12 @@ margin-left: 100px;
 .contact-here{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-    gap: 100px;
-    margin: 50px;
-    padding-top: 50px;
+    gap: 80px;
+    margin: 45px;
+    
 }
  h2{
-    font-size: 90px;
+    font-size: 60px;
     line-height: 1;
     text-align: center;
     align-items: center;
@@ -782,14 +787,14 @@ margin-left: 100px;
 }
 .contact-text p{
     color:rgb(177,177,177);
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
     margin-bottom: 2rem;
     white-space: 10px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 .contact-list{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     letter-spacing: 2px;
     line-height: 7px;
     
@@ -797,9 +802,9 @@ margin-left: 100px;
 .contact-list li{
     margin-bottom: 10px;
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 100;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
 }
 .contact-list i{
@@ -886,16 +891,16 @@ border-radius: 0.5rem;
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 25px 0;
+    padding: 20px 0;
     background: rgb(7,85,91);
-    font-weight: 300;
-    margin-top: 70px;
+    font-weight: 250;
+    margin-top: 20px;
     justify-content: center;
 }
 .top{
     position: fixed;
-    bottom: 2.1rem;
-    right: 2.1rem;
+    bottom: 1rem;
+    right: 1rem;
     width: 100%;
 }
 .top i{
