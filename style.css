@@ -21,73 +21,170 @@ body{
     align-items: center;
     z-index: 100;
 }
-.logo
-{
-    position: relative;
-    font-size: 25px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600; 
-    cursor: default;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
 
- }
-.navbar a
-{
-    display: inline-block;
+
+
+  /* 
+  $content-width will be the max width of the content within the navigation bar. 
+  $breakpoint determines at which width the media query breakpoint will take effect.
+  */
+  
+
+  nav {
+    float: right;
+
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+  }
+  nav ul li {
+    float: left;
+    position: relative;
+  }
+  nav ul li a {
+    display: inlineblock;
+    padding: 0 20px;
+    line-height: 70px;
     font-size: 30px;
-    color: #fff;
+
+    /* color: #463f3f; */
     text-decoration: none;
+    color: #fff;
+  
     font-weight: 500;
     margin-left: 35px;
     /* transition: .3s; */
     opacity: 0;
     animation: slideTop .5s ease forwards;
     animation-delay: calc(.2s * var(--i));
-
-}
-.navbar .icon {
-    display: none;
+    /*
+    The full path of this code is nav ul li a:not(:only-child):after. This means that the code will apply to any a tag in our nav list that is NOT an only child, aka any dropdown. The :after means it comes after the output of the tag. I’ve decided that to specify any nav item as a dropdown, it will be followed by a unicode arrow – ▾ (#9662).
+    */
   }
-.navbar a:hover{
+  nav ul li a:hover {
+    /* background: #f2f2f2; */
     color: #0ef;
-}
-
-
-
-
-
-/* Show the dropdown menu on hover */
-
-
-
-
-/* Media Query for Responsive Design */
-@media screen and (max-width: 925px) {
-    .navbar a:not(:first-child){
-      display: none;
-    }
-    .navbar a.icon {
-      float: right;
-      display: block;
-    }
   }
+
+
+
  
-  @media screen and (max-width: 850px) {
-    .navbar.responsive {position: relative;}
-    .navbar.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .navbar.responsive a {
-      float: none;
+  
+  .nav-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #0ef;
+    height: 60px;
+    width: 60px;
+    margin: 20px;
+    border-radius: 10%;
+    /* background-color: violet; */
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .nav-mobile {
       display: block;
-      text-align: left;
     }
   
+    nav {
+      width: 100%;
+      /* padding: 70px 0 15px; */
+    }
+    nav ul {
+      display: none;
+    }
+    nav ul li {
+      float: none;
+    }
+    nav ul li a {
+      padding: 15px;
+      line-height: 20px;
+    }
+    nav ul li ul li a {
+      padding-left: 30px;
+    }
   }
+  #nav-toggle {
+    position: absolute;
+    left: 15px;
+    top: 27px;
+    cursor: pointer;
+    /* padding: 10px 35px 16px 0px; */
+  }
+  #nav-toggle span,
+  #nav-toggle span:before,
+  #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 4px;
+    width: 30px;
+    background: #051725;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+  }
+  #nav-toggle span:before {
+    top: -10px;
+  }
+  #nav-toggle span:after {
+    bottom: -10px;
+  }
+  #nav-toggle.active span {
+    background-color: transparent;
+  }
+  #nav-toggle.active span:before, #nav-toggle.active span:after {
+    top: 0;
+  }
+  #nav-toggle.active span:before {
+    transform: rotate(45deg);
+  }
+  #nav-toggle.active span:after {
+    transform: rotate(-45deg);
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .nav-list {
+      display: block !important;
+    }
+  }
+  /* 
+  .navigation – the outer wrapper for the navbar. Specifies the height and color, and will stretch the full width of the viewport.
+  */
+  .navigation {
+    height: 70px;
+    background: #ffffff;
+  }
+  
+  /*
+  .nav-container – the inner wrapper for the navbar. Defines how far the actual content should stretch.
+  */
+  .nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .brand {
+    position: relative;
+    padding-left: 10px;
+    float: left;
+    line-height: 70px;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 500px;
+    animation: slideRight 1s ease forwards;
+  }
+  .brand a,
+  .brand a:visited {
+    color: #0ef;
+    text-decoration: none;
+  }
+  
 
 .home
 {
@@ -102,6 +199,8 @@ body{
     display: flex;
     align-items: center;
     padding:70px 10% 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .home-content h3{
     font-size: 40px;
@@ -312,9 +411,7 @@ body{
 
 }
 
-.services-list div:hover{
-    transform: translateY(-10px);
-}
+
 section{
     display: flex;
     flex-wrap: wrap;
@@ -584,13 +681,15 @@ margin-left: 100px;
 
     grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
     grid-gap: 100px; */
+    margin: 50px;
 }
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(550px,1fr));
-    gap: 50px;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    gap: 100px;
     margin: 50px;
     padding-top: 50px;
+    
     
     /* margin-left: 60px; */
     
@@ -800,6 +899,7 @@ border-radius: 0.5rem;
     position: fixed;
     bottom: 2.1rem;
     right: 2.1rem;
+    width: 100%;
 }
 .top i{
     color: #000;
