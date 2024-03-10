@@ -462,7 +462,7 @@ body{
 
   @media only screen and (max-width: 600px) {
      .radial-bars, .radial-bar {
-      max-width: 70%; /* Adjust the width as needed for your design */
+      max-width: 75%; /* Adjust the width as needed for your design */
       height: auto; /* Maintains aspect ratio */
     }
   }
