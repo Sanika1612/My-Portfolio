@@ -455,14 +455,14 @@ body{
 }
 @media only screen and (max-width: 600px) {
     .Technical-bars {
-      max-width: 60%; /* Adjust the width as needed for your design */
+      max-width: 70%; /* Adjust the width as needed for your design */
       height: auto; /* Maintains aspect ratio */
     }
   }
 
   @media only screen and (max-width: 600px) {
      .radial-bars, .radial-bar {
-      max-width: 75%; /* Adjust the width as needed for your design */
+      max-width: 80%; /* Adjust the width as needed for your design */
       height: auto; /* Maintains aspect ratio */
     }
   }
