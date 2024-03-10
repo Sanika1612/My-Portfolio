@@ -342,7 +342,7 @@ body{
 } */
 .sub-title{
     text-align: center;
-    font-size: 60px;
+    font-size: 55px;
     /* padding-bottom: 50px; */
 }
 .sub-title span{
@@ -420,11 +420,12 @@ body{
 
  
 
-    margin-bottom: 150px;
+    margin-bottom: 170px;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
     grid-gap: 70px;
     margin-top: 50px;
+
     
 }
 .heading1{
@@ -432,13 +433,15 @@ body{
     text-decoration: underline;
     text-underline-offset: 6px;
     text-decoration-thickness: 2px;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
+    font-size: 20px;
 }
 
 
 .bar{
     font-size: 27px;
     margin-bottom: 0;
+    height: 84px;
 }
 .Technical-bars .bar{
     margin-top: 50px 0;
@@ -675,13 +678,15 @@ margin-left: 50px;
     width: 100%;
 }
 .main-text h2{
-    font-size: 60px;
+    font-size: 55px;
     line-height: 1;
     text-align: center;
 }
 .portfolio{
     width: 100%;
-    /* margin: 50px; */
+    margin-top: 50px;
+    margin-bottom: 80px;
+    padding-bottom: 30px;
 
 }
 .portfolio-content{
