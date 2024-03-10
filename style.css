@@ -300,7 +300,7 @@ body{
 }
 .about-img img{
     /* padding:5%; */
-    max-width:600px;
+    max-width:100%;
     height: 450px;
     width: 450px;
     border-radius: 50%;
@@ -331,6 +331,12 @@ body{
     margin-bottom: 70px;
     margin-top: 70px;
 }
+@media only screen and (max-width: 600px) {
+    .about-img img {
+      max-width: 80%; /* Adjust the width as needed for your design */
+      height: 80%; /* Maintains aspect ratio */
+    }
+  }
 
 /* #services{
     color: aliceblue;
@@ -422,7 +428,7 @@ body{
 
     margin-bottom: 170px;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
     grid-gap: 70px;
     margin-top: 50px;
 
@@ -442,7 +448,29 @@ body{
     font-size: 27px;
     margin-bottom: 0;
     height: 84px;
+    
 }
+.Technical-bars{
+   max-width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .Technical-bars {
+      max-width: 60%; /* Adjust the width as needed for your design */
+      height: auto; /* Maintains aspect ratio */
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+     .radial-bars, .radial-bar {
+      max-width: 70%; /* Adjust the width as needed for your design */
+      height: auto; /* Maintains aspect ratio */
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .container {
+padding-left: 10%; /* Maintains aspect ratio */
+    }
+  }
 .Technical-bars .bar{
     margin-top: 50px 0;
 }
@@ -574,10 +602,18 @@ align-items:center;
 margin-bottom: 0%;
 margin-left: 50px;
 
+
 }
+@media only screen and (max-width: 600px) {
+    .radial-bar {
+    margin-left: 0px; /* Maintains aspect ratio */
+    }
+  }
+
 .radial-bars .radial-bar{
     width: 50%;
     height: 130px;
+    max-width: 100%;
 
      position: relative;
 
@@ -783,6 +819,10 @@ margin-left: 50px;
     color: #0ef;
     text-align: center;
 }
+.contact-text{
+    max-width: 100%;
+    }
+
 .contact-text h4{
     margin: 15px 0;
     color: rgb(228, 228,228);
@@ -854,6 +894,15 @@ margin-left: 50px;
 .contact-form form{
     position: relative;
 }
+.contact-form{
+   max-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-text, .contact-form{
+        max-width: 80%; /* Maintains aspect ratio */
+    }
+  }
 .contact-form form input,form textarea{
 border: none;
 outline: none;
